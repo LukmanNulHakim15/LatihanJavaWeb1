@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> </title>
+	
+</head>
+<body>
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <br>
+      <th scope="col">Nim</th>
+      <th scope="col">Nama</th>
+      <th scope="col">JenisKelamin</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr th:each="mahasiswa :${listMahasiswa}"> <!-- Ini adalah looping untuk menampilkan data -->
+      <th scope="row" th:text="${mahasiswa.idMahasiswa}"></th>
+      <td th:text="${mahasiswa.nim}"></td>
+      <td th:text="${mahasiswa.namaMahasiswa}"></td>
+        <td th:text="${mahasiswa.jenisKelamin}"></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
